@@ -2,12 +2,12 @@
   "scanSettings": {
     "configMode": "AUTO",
     "configExternalURL": "",
-    "baseBranches": []
-    "enableLicenseViolations": true
+    "baseBranches": [],
+    "enableLicenseViolations": true,
     "enableReachability": true
   },
   "scanSettingsSAST": {
-    "enableScan": false,
+    "enableScan": true,
     "scanPullRequests": true,
     "incrementalScan": true,
     "baseBranches": [],
@@ -16,7 +16,7 @@
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
     "displayMode": "diff",
-    "useMendCheckNames": true
+    "useMendCheckNames": true,
     "strictMode": "warning"
   },
   "checkRunSettingsSAST": {
@@ -39,18 +39,5 @@
       "addDockerfilePath": false,
       "addMendIdentifier": false
     }
-  }
-  {
-  "settingsInheritedFrom": "myorganization/whitesource-config@main",
-  "remediateSettings": {
-    "workflowRules": {
-      "enabled": false
-    },
-    "enableRenovate": true,
-    "extends": [
-       "config:base",
-       "github>whitesource/merge-confidence:beta",
-       "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
-      ]
   }
 }
